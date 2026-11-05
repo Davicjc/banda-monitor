@@ -1,0 +1,8 @@
+coletor-c/banda-coletor
+*.o
+banda.skel.h
+vmlinux.h
+__pycache__/
+*.pyc
+*.db*
+docs/prints/*.tmp

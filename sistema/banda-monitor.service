@@ -1,0 +1,11 @@
+[Unit]
+Description=Banda — monitor de rede por app (eBPF), desliga sozinho sem janela aberta
+Requires=banda-monitor.socket
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/lib/banda-monitor/servidor/banda.py
+Nice=10
+IOSchedulingClass=idle
+ProtectHome=read-only
+PrivateTmp=true

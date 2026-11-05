@@ -1,0 +1,7 @@
+{
+    "uuid": "banda@banda-monitor",
+    "name": "Banda — Monitor de Rede",
+    "description": "Mostra a taxa de download e upload na barra e abre o monitor por aplicativo ao clicar",
+    "icon": "network-transmit-receive-symbolic",
+    "max-instances": 1
+}

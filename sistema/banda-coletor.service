@@ -1,0 +1,14 @@
+[Unit]
+Description=Banda — coletor de rede por app (eBPF, ~5 MB), grava o histórico
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/lib/banda-monitor/banda-coletor
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=10
+Nice=5
+
+[Install]
+WantedBy=multi-user.target

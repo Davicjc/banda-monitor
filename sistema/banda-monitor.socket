@@ -1,0 +1,9 @@
+[Unit]
+Description=Banda — monitor de rede por app (abre só quando a janela é aberta)
+
+[Socket]
+ListenStream=127.0.0.1:7788
+NoDelay=true
+
+[Install]
+WantedBy=sockets.target
